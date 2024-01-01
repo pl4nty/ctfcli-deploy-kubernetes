@@ -31,7 +31,7 @@ To expose pwn challenges to the internet:
 To expose web challenges to the internet:
 
 1. [Install an ingress controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
-2. Set it as the default IngressClass: `kubectl annotate ingressclass your-ingress-class ingressclass.kubernetes.io/is-default-class=true`. Alternatively, set `kompose.service.expose.tls-secret` in an [override](#overrides)
+2. Set it as the default IngressClass: `kubectl annotate ingressclass your-ingress-class ingressclass.kubernetes.io/is-default-class=true`. Alternatively, set `kompose.service.expose.ingress-class-name` in an [override](#overrides)
 3. Choose a domain for challenges to be exposed on subdomains, eg `chals.example.com`
 4. `ctf challenge deploy --host "kubernetes://chals.example.com?registry=ghcr.io/username" --skip-login`
 5. Configure DNS for `*.chals.example.com` to point to your ingress controller external IP address
