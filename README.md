@@ -14,7 +14,7 @@ A [ctfcli](https://github.com/CTFd/ctfcli) plugin for deploying CTF challenge co
 1. Add a [Compose](https://www.compose-spec.io/) file like `docker-compose.yml` to your challenge(s)
 2. `ctf challenge deploy --host "kubernetes://chals.example.com?registry=ghcr.io/username" --skip-login`
 3. If your Compose files already have `image` fields, the registry parameter isn't required
-4. If your `.ctf/config` file contains registry credentials, the `--skip-login` parameter isn't requried
+4. If your `.ctf/config` file contains registry credentials, the `--skip-login` parameter isn't required
 
 ## Pwn challenges
 
