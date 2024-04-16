@@ -1,1 +1,1 @@
-hiyapyco==0.5.4
+hiyapyco==0.5.5
